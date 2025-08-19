@@ -98,7 +98,7 @@ const updateProduct = async (req, res) => {
     );
 
     if (!product) {
-      return res.status(404).json({ success: false, error: 'Product not found' });
+      return res.status(404).json({ success: false, error: 'Product not found',data:{} });
     }
 
     res.status(200).json({ success: true, data: product });
