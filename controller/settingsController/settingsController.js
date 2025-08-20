@@ -48,6 +48,7 @@ const updateSettings = async (req, res) => {
 
     const updatedSettings = await Settings.updateSettings(settingsData);
     res.json({
+      code:200,
       message: 'Settings updated successfully',
       settings: updatedSettings
     });
